@@ -1,0 +1,85 @@
+/**** ===== Global Layout ==== ****/
+
+* {
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+}
+
+
+/**** ===== Section Styles ==== ****/
+
+.banner h1 {
+    background-color: #2d3945;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 0px;
+    padding: .5em;
+    font-display: inline-block;
+}
+
+.sign_up_intro_paragraph {
+    text-align: center;
+}
+
+div.sign_up_intro_paragraph p:nth-child(1) {
+    font-size: 2em;
+    color: #2d3945;
+
+}
+
+
+.large_horizontal_line {
+    border: 3px solid #2D3945;
+    width: 90%;
+}
+
+.small_horizontal_line {
+    border-top: 3px solid #2D3945;
+    width: 90%;
+    margin-bottom: 2em;
+}
+
+legend {
+    color: #2d3945;
+    margin-bottom: 2em;
+
+}
+
+fieldset {
+    border: none;
+    padding: 0px;
+    margin-left: .8em;
+}
+
+input {
+    background-color: #eff0f1;
+    padding: 1em;
+    border: none;
+    width: 96%;
+
+}
+
+label {
+    color: #97a2ac;
+    display: block;
+    margin-bottom: .3em;
+}
+
+.thin_horizontal_line {
+    border: 2px solid #2D3945;
+    width: 90%;
+    margin-top: 2em;
+}
+
+input[type="textarea"] {
+    padding: 3em;
+}
+
+button[type="submit"] {
+    padding: 1em;
+    background-color: #4cbbb4;
+    color: white;
+    border: none;
+    width: 88%;
+}
