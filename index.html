@@ -18,10 +18,10 @@
     <body>
         <header>
             <div class="banner">
-                <h1>The Code Review</h1>
+                <h3>The Code Review</h3>
             </div>
             <div class="sign_up_intro_paragraph">
-                <h2>Sign up for our newsletter</h2>
+                <h3>Sign up for our newsletter</h3>
                 <p>Get the latest news on tech. Straight into your inbox.</p>
             </div>
         </header>
@@ -30,7 +30,7 @@
         <main>
             <form action="index.html" method="post">
                 <fieldset>
-                <legend>Contact Information</legend>
+                <legend><h3>Contact Information</h3></legend>
                 <label for="name">Full Name</label><br>
                 <input type="name" id="name" name="user_name" placeholder="Required" required><br>
                 <label for="email">Email</label><br>
@@ -99,15 +99,14 @@
                     <input type="text" id="zip" name="user_zip" pattern="[0-9]*"><br>
                 </fieldset>
             <hr class="thin_horizontal_line">
-            <h1>Newsletter</h1>
+            <div class="news_letter_heading">
+            <h3>Newsletter</h3>
+            </div>
             <fieldset>
             <p>Select the newsletters you would like to receive.</p>
-                <input type="checkbox" id="html_news" value="html_news" name="user_news_choice">
-                <label for="html_news">Html News</label><br>
-                <input type="checkbox" id="css_news" value="css_news" name="user_news_choice">
-                <label for="css_news">Css News</label><br>
-                <input type="checkbox" id="javascript_news" value="javascript_news" name="user_news_choice">
-                <label for="javascript_news">Java Script News</label>
+                <input type="checkbox" id="html_news" value="html_news" name="user_news_choice"><label for="html_news">Html News</label><br>
+                <input type="checkbox" id="css_news" value="css_news" name="user_news_choice"><label for="css_news">Css News</label><br>
+                <input type="checkbox" id="javascript_news" value="javascript_news" name="user_news_choice"><label for="javascript_news">Java Script News</label>
             <p>Newsletter Format</p>
                 <input type="radio" id="html" value="html" name="newsletter_format">
                 <label for="html">HTML</label><br>
@@ -116,7 +115,7 @@
                 <label for="other_topics">Other topics you would like to hear about</label><br>
                 <input type="textarea" id="other_topics" name="user_other_topics"><br>
                 <button type="submit">Sign Up</button><br>
-                <p>Copyright The Code Review</p>
+                <p class="copy_right_text">Copyright The Code Review</p>
             </fieldset>
             </form>
         </main>

@@ -8,7 +8,7 @@
 
 /**** ===== Section Styles ==== ****/
 
-.banner h1 {
+.banner h3 {
     background-color: #2d3945;
     color: white;
     text-transform: uppercase;
@@ -16,35 +16,42 @@
     margin-top: 0px;
     padding: .5em;
     font-display: inline-block;
+    font-weight: bold;
 }
 
 .sign_up_intro_paragraph {
     text-align: center;
 }
 
-div.sign_up_intro_paragraph p:nth-child(1) {
-    font-size: 2em;
-    color: #2d3945;
-
+.sign_up_intro_paragraph h3 {
+    font-weight: bold;
 }
 
+.sign_up_intro_paragraph p {
+    padding-right: .8em;
+    padding-left: .8em;
+    padding-bottom: .5em;
+}
 
 .large_horizontal_line {
     border: 3px solid #2D3945;
     width: 90%;
+    margin-top: 10px;
 }
 
 .small_horizontal_line {
     border-top: 3px solid #2D3945;
     width: 90%;
-    margin-bottom: 2em;
+    margin-bottom: 10px;
 }
 
 legend {
     color: #2d3945;
-    margin-bottom: 2em;
-
+    margin-bottom: 10px;
+    font-weight: bold;
 }
+
+
 
 fieldset {
     border: none;
@@ -52,18 +59,23 @@ fieldset {
     margin-left: .8em;
 }
 
+label {
+    color: #97a2ac;
+    padding-bottom: .2em;
+    display: block;
+}
+
+
 input {
     background-color: #eff0f1;
     padding: 1em;
     border: none;
     width: 96%;
-
+    display: block;
 }
 
-label {
-    color: #97a2ac;
-    display: block;
-    margin-bottom: .3em;
+input[type="zip"] {
+    margin-top: 3.2em
 }
 
 .thin_horizontal_line {
@@ -72,7 +84,13 @@ label {
     margin-top: 2em;
 }
 
+.news_letter_heading h3 {
+    margin-left: .8em;
+}
+
+
 input[type="textarea"] {
+    display: block;
     padding: 3em;
 }
 
@@ -81,5 +99,13 @@ button[type="submit"] {
     background-color: #4cbbb4;
     color: white;
     border: none;
-    width: 88%;
+    width: 95.7%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.copy_right_text {
+    text-align: center;
+    font-size: small;
+    font-style: italic;
 }
