@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/styles.css">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
@@ -95,7 +95,7 @@
                         <option value="WI">Wisconsin</option>
                         <option value="WY">Wyoming</option>
                     </select><br>
-                    <label for="zip">Zip Code</label><br>
+                    <label for="zip" class="zip">Zip Code</label><br>
                     <input type="text" id="zip" name="user_zip" pattern="[0-9]*"><br>
                 </fieldset>
             <hr class="thin_horizontal_line">
@@ -103,17 +103,21 @@
             <h3>Newsletter</h3>
             </div>
             <fieldset>
-            <p>Select the newsletters you would like to receive.</p>
-                <input type="checkbox" id="html_news" value="html_news" name="user_news_choice"><label for="html_news">Html News</label><br>
-                <input type="checkbox" id="css_news" value="css_news" name="user_news_choice"><label for="css_news">Css News</label><br>
-                <input type="checkbox" id="javascript_news" value="javascript_news" name="user_news_choice"><label for="javascript_news">Java Script News</label>
-            <p>Newsletter Format</p>
-                <input type="radio" id="html" value="html" name="newsletter_format">
-                <label for="html">HTML</label><br>
-                <input type="radio" id="plain_text" value="plain_text" name="newsletter_format">
-                <label for="plain_text">Plain text</label><br>
-                <label for="other_topics">Other topics you would like to hear about</label><br>
-                <input type="textarea" id="other_topics" name="user_other_topics"><br>
+            <p id="select_newsletter_heading">Select the newsletters you would like to receive.</p>
+                <div class="checkbox">
+                    <input type="checkbox" id="html_news" value="html_news" name="user_news_choice"><label for="html_news" class="checkbox_label">Html News</label><br>
+                    <input type="checkbox" id="css_news" value="css_news" name="user_news_choice"><label for="css_news" class="checkbox_label">Css News</label><br>
+                    <input type="checkbox" id="javascript_news" value="javascript_news" name="user_news_choice"><label for="javascript_news" class="checkbox_label">Java Script News</label>
+                </div>
+            <p id="news_letter_format_heading">Newsletter Format</p>
+                <div class="radio">
+                    <input type="radio" id="html" value="html" name="newsletter_format">
+                    <label for="html" class="radio_label">HTML</label><br>
+                    <input type="radio" id="plain_text" value="plain_text" name="newsletter_format">
+                    <label for="plain_text" class="radio_label">Plain text</label><br>
+                    <label for="other_topics" class="radio_label">Other topics you would like to hear about</label><br>
+                    <input type="textarea" id="other_topics" name="user_other_topics"><br>
+                 </div>
                 <button type="submit">Sign Up</button><br>
                 <p class="copy_right_text">Copyright The Code Review</p>
             </fieldset>

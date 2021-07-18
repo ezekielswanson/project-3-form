@@ -16,7 +16,7 @@
     margin-top: 0px;
     padding: .5em;
     font-display: inline-block;
-    font-weight: bold;
+    font-weight: bold
 }
 
 .sign_up_intro_paragraph {
@@ -74,10 +74,9 @@ input {
     display: block;
 }
 
-input[type="zip"] {
-    margin-top: 3.2em
+.zip {
+    margin-top: 1em;
 }
-
 .thin_horizontal_line {
     border: 2px solid #2D3945;
     width: 90%;
@@ -88,6 +87,39 @@ input[type="zip"] {
     margin-left: .8em;
 }
 
+#select_newsletter_heading {
+    color:#97a2ac
+}
+
+input[type="checkbox"] {
+    display: inline-block;
+    width: auto;
+}
+
+.checkbox_label {
+    display: inline-block;
+    margin-left: 1em;
+    margin-bottom: .5em;
+}
+
+
+#news_letter_format_heading {
+    color: #97a2ac
+}
+
+
+input[type="radio"] {
+    display: inline-block;
+    width: auto;
+    margin-right: 1em;
+}
+
+
+
+.radio_label {
+    display: inline-block;
+    margin-bottom: .5em;
+}
 
 input[type="textarea"] {
     display: block;
