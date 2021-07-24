@@ -9,9 +9,12 @@
 /**** ===== Section Styles ==== ****/
 
 
-body {
+
+.wrapper {
     max-width: 1024px;
+    margin: 0 auto;
 }
+
 
 .banner h3 {
     background-color: #2d3945;
@@ -88,7 +91,7 @@ select {
 }
 
 #zip {
-    width: 50%;
+    width: 30%;
 }
 
 .thin_horizontal_line {
@@ -160,41 +163,128 @@ button[type="submit"] {
 /***** ====== MEDIA QUERY ====== *******/
 
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
 
+
+.banner {
+    width: 100%;
+}
+
+.wrapper {
+    max-width: 1024px;
+    padding-left: 4em;
+    padding-right: 4em;
+}
 
 
 .large_horizontal_line {
     border: solid 5px #2D3945;
     width: 92.5%;
-
 }
 
 .small_horizontal_line {
     width: 93%;
 }
 
+
 fieldset {
-    margin-left: 2em;
+    margin-left: 7em;
+    margin-right: 7em;
 }
+
+
 
 .contact_flex_box_container {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    
 }
 
+
+.contact_flex_box_container > input {
+    margin-bottom: 1em;
+}
+
+label {
+    width: 25%;
+    display: inline-block;
+}
+
+input {
+    width: 75%;
+    display: inline-block;
+}
+
+select {
+    width: 75%;
+}
+
+#zip {
+    width: 25%
+}
+
+#zip_input {
+    width: 30%
+}
 
 .thin_horizontal_line {
     border: 4px solid #2D3945;
     width: 92.5%;
 }
 
-#zip {
-    width: 50%;
-}
 
 #news_letter_banner_text {
     margin-top: 3em;
     margin-left: 2em;
 }
+
+input[type="checkbox"] {
+    display: inline-block;
+    width: auto;
+}
+
+.checkbox_label {
+    display: inline-block;
+    margin-left: 1em;
+    margin-bottom: .5em;
+}
+
+
+#news_letter_format_heading {
+    color: #97a2ac
+}
+
+
+input[type="radio"] {
+    display: inline-block;
+    width: auto;
+    margin-right: 1em;
+}
+
+
+
+.radio_label {
+    display: inline-block;
+    margin-bottom: .5em;
+}
+
+input[type="textarea"] {
+    display: block;
+    padding: 3em;
+}
+
+button[type="submit"] {
+    padding: 1em;
+    background-color: #4cbbb4;
+    color: white;
+    border: none;
+    width: 95.7%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 
 }
