@@ -20,6 +20,7 @@
             <div class="banner">
                 <h3>The Code Review</h3>
             </div>
+        <div class="wrapper">
             <div class="sign_up_intro_paragraph">
                 <h3>Sign up for our newsletter</h3>
                 <p>Get the latest news on tech. Straight into your inbox.</p>
@@ -29,31 +30,19 @@
         <hr class="small_horizontal_line">
         <main>
             <form action="index.html" method="post">
-                    <form action="index.html" method="post">
                         <fieldset>
                         <legend><h3>Contact Information</h3></legend>
                         <div class="contact_flex_box_container">
-                            <div class="contact_flex_box_container_item">
-                                <label for="name">Full Name</label><br>
-                                <input type="name" id="name" name="user_name" placeholder="Required" required><br>
-                            </div>
-                            <div class="contact_flex_box_container_item">
-                                <label for="email">Email</label><br>
-                                <input type="email" id="email" name="user_email" placeholder="Required" required><br>
-                            </div>
-                            <div class="contact_flex_box_container_item">
+                                <label for="name" class="label_style">Full Name</label>
+                                <input type="name" id="name" name="user_name" placeholder="Required" required class="input_style">
+                                <label for="email" class="label_style">Email</label><br>
+                                <input type="email" id="email" name="user_email" placeholder="Required" required>  
                                 <label for="phone">Phone</label><br>
-                                <input type="tel" id="phone" name="user_phone"><br>
-                            </div>
-                            <div class="contact_flex_box_container_item">
+                                <input type="tel" id="phone" name="user_phone">
                                 <label for="street_address">Street Address</label><br>
-                                <input type="text" id="street_address" name="user_street_address"><br>
-                            </div>
-                            <div class="contact_flex_box_container_item">
+                                <input type="text" id="street_address" name="user_street_address">
                                 <label for="city">City</label><br>
-                                <input type="text" id="city" name="user_city"><br>
-                             </div>
-                             <div class="contact_flex_box_container_item">
+                                <input type="text" id="city" name="user_city">
                                 <label for="state">State</label><br>
                                     <select id="state" name="user_state">
                                         <option value="AL">Alabama</option>
@@ -108,12 +97,9 @@
                                         <option value="WI">Wisconsin</option>
                                         <option value="WY">Wyoming</option>
                                     </select>
-                                </div>
-                                <div class="contact_flex_box_container_item">
-                                    <label for="zip" id="zip">Zip Code</label><br>
-                                    <input type="text" id="zip" name="user_zip" pattern="[0-9]*">
-                            </div>
-                        </div>
+                                <label for="zip" id="zip">Zip Code</label><br>
+                                <input type="text" id="zip" name="user_zip" pattern="[0-9]*" id="zip_input"> 
+                             </div>
                     </fieldset>
             <hr class="thin_horizontal_line">
             <div class="news_letter_heading">
@@ -140,5 +126,6 @@
             </fieldset>
             </form>
         </main>
+    </div>
     </body>
 </html>
