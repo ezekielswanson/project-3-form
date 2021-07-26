@@ -82,6 +82,10 @@ input {
     display: block;
 }
 
+::placeholder {
+    text-align: right;
+}
+
 select {
     background-color: #eff0f1;
     padding: 1em;
