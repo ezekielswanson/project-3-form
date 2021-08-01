@@ -106,8 +106,12 @@ select {
 }
 
 #zip {
-    width: 30%;
     margin-top: 1em;
+}
+
+#zip_input {
+
+    width: 55%;
 }
 
 .thin_horizontal_line {
@@ -220,7 +224,7 @@ fieldset {
 
 
 .contact_flex_box_container > input,
-contact.contact_flex_box_container > select {
+.contact_flex_box_container > select {
     margin-bottom: 1em;
 }
 
@@ -249,11 +253,11 @@ select {
 }
 
 #zip {
-    width: 15%
+    width: 25%
 }
 
 #zip_input {
-    width: 70%
+    width: 30%; 
     
 }
 
