@@ -11,7 +11,7 @@
 
 
 .wrapper {
-    max-width: 1024px;
+    max-width: 768px;
     margin: 0 auto;
 }
 
@@ -69,10 +69,13 @@ fieldset {
 
 label {
     color: #97a2ac;
-    padding-bottom: .2em;
     display: block;
+    margin-bottom: .5em;
 }
 
+#full_name_label {
+    margin-bottom: 1.3em;
+}
 
 input {
     background-color: #eff0f1;
@@ -80,7 +83,15 @@ input {
     border: none;
     width: 96%;
     display: block;
+    margin-bottom: 1em;
 }
+
+
+
+input:hover {
+    border-color: #2D3945;
+}
+
 
 ::placeholder {
     text-align: right;
@@ -96,6 +107,7 @@ select {
 
 #zip {
     width: 30%;
+    margin-top: 1em;
 }
 
 .thin_horizontal_line {
@@ -167,7 +179,7 @@ button[type="submit"] {
 /***** ====== MEDIA QUERY ====== *******/
 
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
 
 
 .banner {
@@ -175,7 +187,7 @@ button[type="submit"] {
 }
 
 .wrapper {
-    max-width: 1024px;
+    max-width: 768px;
     padding-left: 4em;
     padding-right: 4em;
 }
@@ -183,11 +195,11 @@ button[type="submit"] {
 
 .large_horizontal_line {
     border: solid 5px #2D3945;
-    width: 92.5%;
+    width: 83%;
 }
 
 .small_horizontal_line {
-    width: 93%;
+    width: 83%;
 }
 
 
@@ -203,12 +215,12 @@ fieldset {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-evenly;
     
 }
 
 
-.contact_flex_box_container > input {
+.contact_flex_box_container > input,
+contact.contact_flex_box_container > select {
     margin-bottom: 1em;
 }
 
@@ -222,27 +234,39 @@ input {
     display: inline-block;
 }
 
+input:hover {
+    border-color: #2D3945;
+}
+
+
+::placeholder {
+    text-align: right;
+}
+
+
 select {
     width: 75%;
 }
 
 #zip {
-    width: 25%
+    width: 15%
 }
 
 #zip_input {
-    width: 30%
+    width: 70%
+    
 }
 
+
 .thin_horizontal_line {
-    border: 4px solid #2D3945;
-    width: 92.5%;
+    border: 5px solid #2D3945;
+    width: 83%;
 }
 
 
 #news_letter_banner_text {
     margin-top: 3em;
-    margin-left: 2em;
+    margin-left: 6em;
 }
 
 input[type="checkbox"] {
@@ -278,6 +302,7 @@ input[type="radio"] {
 input[type="textarea"] {
     display: block;
     padding: 3em;
+    width: 100%;
 }
 
 button[type="submit"] {
@@ -285,7 +310,7 @@ button[type="submit"] {
     background-color: #4cbbb4;
     color: white;
     border: none;
-    width: 95.7%;
+    width: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
 }
