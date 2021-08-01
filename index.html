@@ -2,8 +2,8 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -34,9 +34,9 @@
                         <legend><h3>Contact Information</h3></legend>
                         <div class="contact_flex_box_container">
                                 <label for="name" class="label_style" id="full_name_label">Full Name</label>
-                                <input type="name" id="name" name="user_name" placeholder="Required" required class="input_style">
+                                <input type="name" id="name" name="user_name" placeholder="Required">
                                 <label for="email" class="label_style">Email</label><br>
-                                <input type="email" id="email" name="user_email" placeholder="Required" required>  
+                                <input type="email" id="email" name="user_email" placeholder="Required">  
                                 <label for="phone">Phone</label><br>
                                 <input type="tel" id="phone" name="user_phone">
                                 <label for="street_address">Street Address</label><br>
@@ -97,13 +97,13 @@
                                         <option value="WI">Wisconsin</option>
                                         <option value="WY">Wyoming</option>
                                     </select>
-                                <label for="zip" id="zip">Zip Code</label><br>
+                                <label for="zip" id="zip_label">Zip Code</label><br>
                                 <input type="text" name="user_zip" pattern="[0-9]*" id="zip_input"> 
                              </div>
                     </fieldset>
             <hr class="thin_horizontal_line">
             <div class="news_letter_heading">
-            <h3 id="news_letter_banner_text">Newsletter</h3>
+                <h3 id="news_letter_banner_text">Newsletter</h3>
             </div>
             <fieldset>
             <p id="select_newsletter_heading">Select the newsletters you would like to receive.</p>
@@ -119,7 +119,7 @@
                     <input type="radio" id="plain_text" value="plain_text" name="newsletter_format">
                     <label for="plain_text" class="radio_label">Plain text</label><br>
                     <label for="other_topics" class="radio_label">Other topics you would like to hear about</label><br>
-                    <input type="textarea" id="other_topics" name="user_other_topics"><br>
+                    <textarea id="other_topics" name="user_other_topics"></textarea><br>
                  </div>
                 <button type="submit">Sign Up</button><br>
                 <p class="copy_right_text">Copyright The Code Review</p>
