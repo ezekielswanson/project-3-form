@@ -23,7 +23,6 @@
     text-align: center;
     margin-top: 0px;
     padding: .5em;
-    font-display: inline-block;
     font-weight: bold
 }
 
@@ -105,11 +104,11 @@ select {
     border: none;
 }
 
-#zip {
+.zip_label {
     margin-top: 1em;
 }
 
-#zip_input {
+.zip_input {
 
     width: 55%;
 }
@@ -158,9 +157,11 @@ input[type="radio"] {
     margin-bottom: .5em;
 }
 
-input[type="textarea"] {
+textarea {
     display: block;
     padding: 3em;
+    background-color: #eff0f1;
+    border: none;
 }
 
 button[type="submit"] {
@@ -252,11 +253,11 @@ select {
     width: 75%;
 }
 
-#zip {
+.zip_label {
     width: 25%
 }
 
-#zip_input {
+.zip_input {
     width: 30%; 
     
 }
@@ -303,10 +304,12 @@ input[type="radio"] {
     margin-bottom: .5em;
 }
 
-input[type="textarea"] {
+textarea {
     display: block;
     padding: 3em;
     width: 100%;
+    background-color: #eff0f1;
+    border: none;
 }
 
 button[type="submit"] {
