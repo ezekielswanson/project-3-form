@@ -91,6 +91,9 @@ input:hover {
     border-color: #2D3945;
 }
 
+input:focus {
+    background-color: gainsboro;
+}
 
 ::placeholder {
     text-align: right;
@@ -110,7 +113,7 @@ select {
 
 .zip_input {
 
-    width: 55%;
+    width: 50%;
 }
 
 .thin_horizontal_line {
@@ -186,17 +189,22 @@ button[type="submit"] {
 
 @media (min-width: 768px) {
 
+input:focus {
+    background-color: gainsboro;
+}
+
 
 .banner {
     width: 100%;
 }
 
+/******
 .wrapper {
     max-width: 768px;
     padding-left: 4em;
     padding-right: 4em;
 }
-
+*****/
 
 .large_horizontal_line {
     border: solid 5px #2D3945;
@@ -258,7 +266,7 @@ select {
 }
 
 .zip_input {
-    width: 30%; 
+    width: 25%; 
     
 }
 
@@ -271,7 +279,8 @@ select {
 
 #news_letter_banner_text {
     margin-top: 3em;
-    margin-left: 6em;
+    margin-left: auto;
+  
 }
 
 input[type="checkbox"] {
