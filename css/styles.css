@@ -101,7 +101,7 @@ select:focus {
 
 
 textarea:focus {
-    background-color: gainsboro;
+    background-color: blue;
 }
 
 ::placeholder {
@@ -204,7 +204,7 @@ select:focus {
     
     
  textarea:focus {
-    background-color: gainsboro;
+    background-color: blue;
 }
 
 input:focus {
